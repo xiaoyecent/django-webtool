@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>dic create by xiaoye</title>
+
+</head>
+<body>
+<div>
+<form action='http://127.0.0.1:8080/tool/dict/' method='POST'>
+{% csrf_token %}
+<input type='text' name='url' >
+<input type='submit' name='submit' value='create dictionary according to url'>
+</form>
+<div>
+<div>
+{% for dic in dic_final %}
+{{dic}}<br>
+{% endfor %}
+<div>
+</body>
+</html>
+

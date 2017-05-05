@@ -1,0 +1,55 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+function check(){
+	if (ip.ipval.value == ''){
+		alert('empty');
+		return false;
+	}else{
+		return true;
+	}
+}
+</script>
+<center>
+<form action='http://127.0.0.1:8080/tool/ip/' method='get' name='ip' onsubmit='return check();'>
+<input type='text' name='ipval' style="font-size:30px" size="30">
+<input type='submit' value='定位 ip' name='submit'>
+</form>
+</center>
+<center>
+<br>
+<br>
+<p>定位结果及百度地图</p>
+<table border='1'>
+    <thead>
+        <tr>
+            <th>信息</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr>
+			<td>城市</td>
+			<td>{{city}}</td>
+	</tr>
+    <tr>
+            <td>所在经度</td>
+            <td>{{px}}</td>
+    </tr>
+    <tr>
+            <td>所在纬度</td>
+            <td>{{py}}</td>
+    </tr>
+   
+     <tr>
+            <td>静态地图</td>
+            <td><img src="{{ ima }}" /></td>
+     </tr>
+    </tbody>
+</table>
+</center>
+</body>
+</html>
