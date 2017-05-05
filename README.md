@@ -14,3 +14,5 @@ https://bbs.ichunqiu.com/thread-22449-1-1.html
 调用exrex模块，利用正则生成相关的密码
 
 注意，这个和社会工程学密码不一样，此项目是根据一个由用户提供的url来生成相关口令以及弱口令，可用于爆破
+
+请使用者在使用在线ip定位时，在ak=xxxxxxxxx处（tool/ipapi.py文件中）填入自己的ak，可在百度开发者平台申请
