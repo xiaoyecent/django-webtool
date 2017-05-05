@@ -42,8 +42,8 @@ def dic_create(url_dics):
                     if (len(dic) > 4) and (dic[0] not in filter_list):
                         dic_final.append(dic)
     #print dic_final
-	fin = '.'.join(url_dics)
-	dic_final.append(fin)
+    fin = '.'.join(url_dics)
+    dic_final.append(fin)
     return dic_final
 
 #dic_create(url_split())    
